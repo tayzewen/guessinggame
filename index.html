@@ -9,16 +9,26 @@
 </head>
 <body>
     <h1>JavaScript Guessing Game</h1>
-    <p>Guess a number between 1-10</p>
-    <input type="number" id="userNum" min="1" max="10">
-    <button onclick="testUserNum()" id="submitBtn">Submit</button>
+    <div id="start">
+        <ul>
+            <li>You have 5 guesses</li>
+            <li>Guess correctly to earn points</li>
+        </ul>
+        <p>Guess a number between 1-10</p>
+    </div>
+
+    <div id="userInput">
+        <input type="number" id="userNum" min="1" max="10">
+        <button onclick="testUserNum()" id="submitBtn">Guess</button>
+    </div>
 
     <p id="messageEl"></p>
     <p id="guessesEl"></p>
 
-    <button onclick="renderGame()">Play Again!</button>
+    <button onclick="renderGame()" id="playAgainBtn">Play Again!</button>
+    <button onclick="reset()">Reset</button>
 
-    <p id="pointsEl"></p>
+    <p id="pointsEl">Points: <br>0</p>
     
     <script src="myscript.js"></script>
 </body>

@@ -22,6 +22,7 @@ function renderGame() {
     guessesEl.textContent = ""
     document.getElementById("userNum").value = "";
     guess = 0
+    document.getElementById("userInput").style.display = "block";
 }
 
 renderGame()
@@ -47,6 +48,7 @@ function testUserNum() {
         console.log("YES! You guessed correctly. The number was " + randomNumber);
         points = points + (maxGuess - guess);
         pointsEl.textContent = "Points: " + points;
+        document.getElementById("userInput").style.display = "none";
     } else {
         message = "Error"
     }
@@ -54,4 +56,10 @@ function testUserNum() {
     messageEl.textContent = message;
     guessesEl.textContent = "Guesses remaining: " + (maxGuess - guess);
     document.getElementById("userNum").value ="";
+}
+
+function reset() {
+    points = 0;
+    pointsEl.textContent = "Points: " + points;
+    renderGame();
 }

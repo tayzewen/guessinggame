@@ -1,3 +1,46 @@
 body {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-variant: small-caps;
+}
+
+li {
+    list-style: none;
+    padding-bottom: .4rem;
+}
+
+ul {
+    padding: 0;
+}
+
+#userNum {
+    height: 2rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+#userInput {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.1rem;
+}
+
+#messageEl {
+    font-size: 1.4rem;
+}
+
+#pointsEl {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2rem;
 }
